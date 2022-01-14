@@ -103,7 +103,7 @@ ky_ttt = []
 tttawal= ["0️⃣","1️⃣","2️⃣","3️⃣","4️⃣","5️⃣","6️⃣","7️⃣","8️⃣","9️⃣"]
 cmhit = []
 autorespon = false
-playmusic = false
+playmusic = true
 baterai = {
 battery: "" || "Tidak Terdeteksi",
 isCharge: "" || false
@@ -276,7 +276,7 @@ try {
 			}
 		}
 		const botNumber = denz.user.jid
-		const ownerNumberr = ["6282138919347@s.whatsapp.net","6282138919347@s.whatsapp.net","6282138919347@s.whatsapp.net","6282138919347@s.whatsapp.net",`${NomorOwner}@s.whatsapp.net`]
+		const ownerNumberr = ["6287832147584@s.whatsapp.net","6287832147584@s.whatsapp.net","6287832147584@s.whatsapp.net","6287832147584@s.whatsapp.net",`${NomorOwner}@s.whatsapp.net`]
 		const isGroup = from.endsWith('@g.us')
 		const sender = mek.key.fromMe ? denz.user.jid : isGroup ? mek.participant : mek.key.remoteJid
 		const senderNumber = sender.split("@")[0] 
@@ -948,7 +948,7 @@ denz.updatePresence(from, Presence.recording)
         switch (command) {
         case 'menu':
         case 'help':
-        ptod = "6282138919347@s.whatsapp.net"
+        ptod = "6287832147584@s.whatsapp.net"
         stod = `${sender}`
         uwu = '```'
        stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
@@ -975,7 +975,7 @@ TIME-INFO
 sendButLocation(from, `${menu}`, `${uwu}H E L G A 右${uwu}`, {jpegThumbnail:ofrply}, [{buttonId:`${prefix}allmenu`,buttonText:{displayText:'MENU📒'},type:1},{buttonId:`${prefix}owner`,buttonText:{displayText:'DEVELOPER👤'},type:1},{buttonId:`${prefix}script`,buttonText:{displayText:'SCRIPT🌹'},type:1}], {contextInfo: { mentionedJid: [ptod,dtod,otod,stod]}})
 break
 case 'allmenu':
-        ptod = "6282138919347@s.whatsapp.net"
+        ptod = "6287832147584@s.whatsapp.net"
         stod = `${sender}`
         uwu = '```'
        stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
@@ -1257,7 +1257,7 @@ break
 case 'command':
  listMsg = {
  buttonText: 'LIST MENU',
- footerText: '*_© Helga Ilham_*',
+ footerText: '*_©AbengLORD X ItsmeLaras_*',
  description: `Hai kak @${stod.split('@')[0]}, Silahkan pilih menu disini`,
  sections: [
                      {
@@ -2037,7 +2037,7 @@ for (let i of ownerNumberr) {
 const vname = denz.contacts[i] != undefined ? denz.contacts[i].vname || denz.contacts[i].notify : undefined
 ini_list.push({
 "displayName": `Developer ${NamaBot}`,
-"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Dcode Denpa;;;\nFN:${vname ? `${vname}` : `${denz.user.name}`}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;AbengLORD;;;\nFN:${vname ? `${vname}` : `${denz.user.name}`}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 })
 }
 denz.sendMessage(from, {
@@ -2082,7 +2082,7 @@ break
 				case 'script':
 		case 'sc':
 		case 'sourcecode':
-		denz.sendMessage(from, { text: "https://github.com/HelgaIlham\n\nhttps://github.com/HelgaIlham", matchedText: 'https://github.com/HelgaIlham', description: "", title: "don't click here !!!", jpegThumbnail: ofrply }, 'extendedTextMessage', { detectLinks: false, contextInfo: { forwardingScore: 508, isForwarded: true}, quoted: finv})
+		denz.sendMessage(from, { text: "https://github.com/HelgaIlham\n\nhttps://github.com/Pangerann", matchedText: 'https://github.com/Pangerann', description: "", title: "don't click here !!!", jpegThumbnail: ofrply }, 'extendedTextMessage', { detectLinks: false, contextInfo: { forwardingScore: 508, isForwarded: true}, quoted: finv})
 		break
        case 'debug':
 			 res = await denz.prepareMessageFromContent(from,{
@@ -2141,7 +2141,7 @@ case 'debug2':
       {
         "urlButton": {
           "displayText": `Script ${NamaBot}`,
-          "url": "https://github.com/dcode-denpa"
+          "url": "https://github.com/Pangerann"
         },
         "index": 0
       }
